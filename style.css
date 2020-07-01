@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(images/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-size: 40px;
+}
+
+.header-title {
+    color: floralwhite;
+    font-size: 4.5rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input.text input {
+    border: none;
+    border-bottom: 5px solid #1890ff;
+    outline: none;
+}
+
+.input.text input {
+    background: transparent;
+    color: floralwhite;
+    width: 50.7vh;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease;
+    text-indent: -100%;
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: floralwhite;
+}
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: floralwhite;
+    opacity: 1;
+}
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: floralwhite;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: floralwhite;
+}
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: floralwhite;
+}
+
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: floralwhite;
+}
