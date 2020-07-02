@@ -24,9 +24,19 @@ button:active {
     font-size: 40px;
 }
 
+.form-container {
+    background-color: rgba(70, 69, 65, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
 .header-title {
     color: floralwhite;
     font-size: 4.5rem;
+}
+
+.thin {
+    font-weight: 200;
 }
 
 .input {
@@ -34,16 +44,26 @@ button:active {
     flex-direction: column;
 }
 
+.button {
+    background-color: #93c1d0;
+    font-weight: 900;
+    color: floralwhite;
+}
+
+.button:hover {
+    color: #df3880;
+}
+
 .input.text input {
     border: none;
-    border-bottom: 5px solid #1890ff;
+    border-bottom: 5px solid #93c1d0;
     outline: none;
 }
 
 .input.text input {
     background: transparent;
     color: floralwhite;
-    width: 50.7vh;
+    width: 44.7vh;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {
@@ -78,4 +98,20 @@ button:active {
 ::placeholder {
     /* Most modern browsers support this now. */
     color: floralwhite;
+    font-weight: lighter;
+}
+
+.lyrics-container {
+    display: flex;
+    justify-content: center;
+}
+
+.lyrics-list {
+    list-style-type: none;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

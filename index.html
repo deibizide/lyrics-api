@@ -19,13 +19,24 @@
     </head>
     <body>
         <div class="header">
-            <h1 class="header-title">Lyrics Search</h1>
-            <form class="form">
-                <div class="input text">
-                    <input type="text" name="search" placeholder="Enter Artist or Song name👻" required="required" />
-                </div>
-                <button class="btn btn-info">Search</button>
-            </form>
+            <div class="form-container">
+                <h1 class="header-title"><span class="thin">Lyrics Search</span></h1>
+                <form class="form">
+                    <div class="input text">
+                        <input
+                            id="search-input"
+                            type="text"
+                            name="search"
+                            placeholder="Enter Artist or Song name🎤"
+                            required="required"
+                        />
+                    </div>
+                    <button type="button" class="btn button">SEARCH</button>
+                </form>
+            </div>
+        </div>
+        <div class="lyrics-container" id="results">
+            <ul class="lyrics-list"></ul>
         </div>
     </body>
     <script src="script.js"></script>
