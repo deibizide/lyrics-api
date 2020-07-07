@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,10 +20,10 @@
     </head>
     <body>
         <div class="header">
-            <div class="form-container">
+            <div class="container">
                 <h1 class="header-title"><span class="thin">Lyrics Search</span></h1>
                 <form class="form">
-                    <div class="input text">
+                    <div class="d-flex flex-direction-column input text">
                         <input
                             id="search-input"
                             type="text"
@@ -35,9 +36,9 @@
                 </form>
             </div>
         </div>
-        <div class="lyrics-container" id="results">
-            <ul class="lyrics-list"></ul>
-        </div>
+
+        <div class="lyrics-container d-flex align-items-center flex-direction-column" id="results"></div>
+        <div class="lyric mt-5" id="lyrics-results"></div>
     </body>
     <script src="script.js"></script>
 </html>

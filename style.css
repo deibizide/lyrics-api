@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(images/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 button {
     cursor: pointer;
 }
@@ -16,18 +24,15 @@ button:active {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-image: url(images/header.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     font-size: 40px;
 }
 
-.form-container {
+.container {
     background-color: rgba(70, 69, 65, 0.5);
     padding: 30px;
     border-radius: 10px;
+    list-style-type: none;
+    width: 550px;
 }
 
 .header-title {
@@ -37,11 +42,6 @@ button:active {
 
 .thin {
     font-weight: 200;
-}
-
-.input {
-    display: flex;
-    flex-direction: column;
 }
 
 .button {
@@ -63,7 +63,7 @@ button:active {
 .input.text input {
     background: transparent;
     color: floralwhite;
-    width: 44.7vh;
+    width: 45vh;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {
@@ -101,17 +101,21 @@ button:active {
     font-weight: lighter;
 }
 
-.lyrics-container {
-    display: flex;
-    justify-content: center;
-}
-
-.lyrics-list {
-    list-style-type: none;
-}
-
 .list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-bottom: 10px;
+    color: floralwhite;
+}
+
+.song-lyric {
+    color: floralwhite;
+    text-align: center;
+}
+
+.sub-container {
+    height: 90vh;
+}
+
+.loadingDiv {
+    height: 85vh;
+    color: floralwhite;
 }
